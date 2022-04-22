@@ -1,0 +1,31 @@
+#include"std_lib_facilities.h"
+
+vector<int>gv {1,2,4,8,16,32,64,128,256,512};//18.1
+
+void f(vector<int>vect)//18.2
+{
+
+       vector<int>lv;//18.3.a
+       
+       for(int i = 0; i < gv.size(); i++)//18.3.b
+           lv.push_back(gv[i]);     
+
+       for(int i = 0; i < lv.size(); i++)//18.3.c
+           cout << lv[i] << endl;
+           
+       vector<int>lv2;//18.3.d 
+       
+       for(int i = 0; i < lv2.size(); ++i)//18.3.e
+           cout << lv2[i] << endl;  
+}
+int main()
+{
+
+        f(gv);//18.4.a
+        
+        vector<int>vv {1,2,6,24,120,720,5040,40320,362880,3628800};//18.4.b
+                
+        f(vv); //18.4.c       
+
+return 0;
+}
