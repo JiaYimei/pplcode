@@ -1,0 +1,66 @@
+#include"std_lib_facilities.h"
+
+void print_array10(ostream& os, int* a) //17.4
+{    
+     
+     os << a << endl;
+  
+}
+
+void print_array(ostream& os, int* a[], int n) // 17.7
+{
+     os << a[n] << endl;
+}
+
+void prin_vector(ostream& os, int* a)
+{
+     os << a << endl;
+}
+
+
+int main()
+{
+   
+   int* d = new int[10];
+   for(int i = 0; i < 10; ++i) // 17.1
+       cout << d[i] << '\t';//17.2
+   delete [] d;//17.3
+   
+   /*vector v(10);
+   for(int i = 0; i < v.size(); ++ i)
+       v.set(i,101*i);
+       cout << "v[" << i << "] == " << v.get(i) << '\n';*/
+   
+   
+   
+   int* b = new int[10] {101,102,103,104,105,106,107,108,109,110};//17.5
+   for(int i = 0; i < 10; ++i)
+       cout << b[i] << '\t';
+   delete [] b;
+     
+   int* e = new int[11] {101,102,103,104,105,106,107,108,109,110,111};//17.6
+   for(int i = 0; i < 11; ++i)
+       cout << e[i] << '\t';    
+   delete [] e;
+   
+   int* f = new int[20]  {101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120};//17.8
+   for(int i = 0; i < 20; ++i)
+       cout << f[i] << '\t';
+   delete [] f;
+   
+   vector<int>v5 {101,102,103,104,105,106,108,109,110}; //17.10
+   for(int i = 0; i < v5.size(); i++)
+   cout << v5[i] << endl;
+   
+   vector<int>v6 {101,102,103,104,105,106,108,109,110,111}; //17.10
+   for(int i = 0; i < v6.size(); i++)
+   cout << v6[i] << endl;
+   
+   vector<int>v8 {101,102,103,104,105,106,108,109,110,111,112,113,114,115,116,117,118,119,120}; //17.10
+   for(int i = 0; i < v8.size(); i++)
+   cout << v8[i] << endl;
+   
+   
+
+return 0;
+}
