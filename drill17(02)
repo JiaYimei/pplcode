@@ -1,0 +1,44 @@
+#include"std_lib_facilities.h"
+
+int main()
+{
+   /*int a = 7;//1,2
+   int* p1 = &a;
+   cout << *p1 << endl;
+   
+   int* p2 = new int[7] {1,2,4,6,8,10,12};//3,4
+   for (int i = 0; i < 7; ++i)
+   cout << p2[i] << '\t';
+   delete []p2; 
+    
+   int* p3 = p2;//5
+   for (int i = 0; i < 7; ++i)
+   cout << p3[i] << '\t';
+   delete [] p3;
+   
+   *p2 = *p1;//6
+   cout << *p1 << endl; //8
+   
+   *p2 = *p3;//7
+   cout << *p2 << endl;//9*/
+   
+   
+   int* p1 = new int[10] {1,2,4,6,8,10,12,14,16,18};//10
+   for(int i = 0; i < 10; ++i)
+       cout << p1[i] << endl;
+   
+   int* p2 = p1;//11,12
+   for (int i = 0; i < 10; ++i)
+       cout << p2[i] << endl;
+   
+   vector<int>v1 {1,2,4,6,8,10,12,14,16,18};
+   for(int i = 0; i < v1.size(); i++)
+       cout << v1[i] << endl; 
+    
+   vector<int>v2; 
+   for(int i = 0; i < v1.size(); i++)
+       v2.push_back(v1[i]);    
+   for(int i = 0; i < v2.size(); i++)
+       cout << v2[i] << endl;
+return 0;
+}
